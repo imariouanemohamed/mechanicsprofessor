@@ -1,167 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn mechanical engineering with Professor Mohamed Imariouane through online courses, research insights, publications and free engineering resources.">
+  <meta name="author" content="Professor Mohamed Imariouane">
+  <meta property="og:title" content="MechanicsProfessor | Mechanical Engineering Courses">
+  <meta property="og:description" content="University-level mechanical engineering courses, practical tutorials, research and free learning resources.">
+  <meta property="og:type" content="website">
+  <title>MechanicsProfessor | Mechanical Engineering Courses</title>
 
-<title>MechanicsProfessor.com | Mechanical Engineering Courses</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">MechanicsProfessor</a>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+    <div class="container-fluid site-container">
+      <a class="navbar-brand" href="#home" aria-label="MechanicsProfessor home">
+        <span class="brand-mark" aria-hidden="true">⚙</span>
+        <span>Mechanics<span>Professor</span></span>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="menu">
-
-      <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-
-      </ul>
-
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#courses">Explore Courses</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section class="hero text-center">
+  <main>
+    <section class="hero" id="home">
+      <div class="container-fluid site-container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-copy">
+            <div class="eyebrow">Professor • Researcher • Online Instructor</div>
+            <h1>Master<br>Mechanical<br>Engineering</h1>
+            <p class="hero-lead">
+              Learn through university-level courses, practical tutorials, research insights,
+              and engineering resources created by <strong>Professor Mohamed Imariouane</strong>.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#courses">Explore Courses <span aria-hidden="true">→</span></a>
+              <a class="btn btn-outline-primary btn-lg" href="#research">View Research</a>
+            </div>
 
-<div class="container">
+            <div class="hero-facts" aria-label="Professional highlights">
+              <div class="fact-item">
+                <span class="fact-icon">🎓</span>
+                <div><strong>University</strong><span>Professor</span></div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">👥</span>
+                <div><strong>Student</strong><span>Focused</span></div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">📄</span>
+                <div><strong>Research</strong><span>Driven</span></div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">🌍</span>
+                <div><strong>Global</strong><span>Learning</span></div>
+              </div>
+            </div>
+          </div>
 
-<h1>Learn Mechanical Engineering</h1>
+          <div class="col-lg-6">
+            <div class="hero-visual-wrap">
+              <div class="hero-visual-accent"></div>
+              <img src="images/mohamed-imariouane.png" class="hero-photo" alt="Professor Mohamed Imariouane in front of École Mohammadia d'Ingénieurs">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h3 class="mt-3">
-with Professor Mohamed Imariouane
-</h3>
+    <section class="section section-white" id="courses">
+      <div class="container site-narrow">
+        <div class="section-heading text-center">
+          <span class="section-kicker">Featured Courses</span>
+          <h2>Learn Mechanical Engineering Online</h2>
+          <p>High-quality courses designed to build strong fundamentals and solve real engineering problems.</p>
+        </div>
 
-<p class="lead mt-4">
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">🌊</div>
+              <h3>Fluid Mechanics</h3>
+              <p>Fluid statics, Bernoulli's equation, pipe flow, pumps, turbines and introductory CFD.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">🔥</div>
+              <h3>Applied Thermodynamics</h3>
+              <p>Thermodynamic cycles, energy systems and heat transfer through practical engineering examples.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">⚙️</div>
+              <h3>Mechanical Behaviour of Materials</h3>
+              <p>Stress, strain, fatigue, fracture, ceramics and advanced engineering materials.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">📐</div>
+              <h3>Continuum Mechanics</h3>
+              <p>Tensor notation, deformation, stress analysis and constitutive behaviour.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">🧩</div>
+              <h3>Finite Element Analysis</h3>
+              <p>From governing equations and weak form to practical finite element modelling.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="course-card h-100">
+              <div class="course-icon">🧪</div>
+              <h3>Materials Science</h3>
+              <p>Microstructure, mechanical properties, failure mechanisms and material selection.</p>
+              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-University Professor • Researcher • Future Udemy Instructor
+    <section class="section section-soft">
+      <div class="container site-narrow">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-kicker">Why MechanicsProfessor</span>
+            <h2 class="section-title-left">Academic rigor. Practical clarity.</h2>
+            <p class="section-copy">Each lesson connects first principles to worked engineering problems so learners understand both the equations and their physical meaning.</p>
+            <a href="#about" class="btn btn-primary">About the Professor</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="benefits-grid">
+              <article class="benefit-card"><span>01</span><h3>University-Level Teaching</h3><p>Structured lessons based on real mechanical engineering courses.</p></article>
+              <article class="benefit-card"><span>02</span><h3>Worked Problems</h3><p>Clear assumptions, equations, units and complete solutions.</p></article>
+              <article class="benefit-card"><span>03</span><h3>Research-Based Content</h3><p>Materials, fatigue, ceramics and mechanical characterization.</p></article>
+              <article class="benefit-card"><span>04</span><h3>Flexible Online Learning</h3><p>Courses, tutorials and downloadable resources at your pace.</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</p>
+    <section class="section section-white" id="research">
+      <div class="container site-narrow">
+        <div class="section-heading-row">
+          <div>
+            <span class="section-kicker">Research</span>
+            <h2 class="section-title-left">Research areas and engineering applications</h2>
+          </div>
+          <a href="#contact" class="text-link">Research collaboration →</a>
+        </div>
 
-<a href="#" class="btn btn-primary btn-lg me-2">
-Explore Courses
-</a>
+        <div class="research-grid">
+          <article class="research-card featured"><span>01</span><h3>Impact Resistance</h3><p>Dynamic response and damage mechanisms under impact loading.</p><a href="#contact">Explore topic →</a></article>
+          <article class="research-card"><span>02</span><h3>Advanced Ceramics</h3><p>Zirconia, alumina and ceramic-based materials for demanding applications.</p><a href="#contact">Explore topic →</a></article>
+          <article class="research-card"><span>03</span><h3>Fatigue and Fracture</h3><p>Fatigue life, crack initiation and durability under cyclic loading.</p><a href="#contact">Explore topic →</a></article>
+          <article class="research-card"><span>04</span><h3>Mechanical Characterization</h3><p>Experimental evaluation of strength, stiffness, toughness and failure.</p><a href="#contact">Explore topic →</a></article>
+        </div>
+      </div>
+    </section>
 
-<a href="#" class="btn btn-outline-light btn-lg">
-Research
-</a>
+    <section class="section section-soft" id="publications">
+      <div class="container site-narrow">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4">
+            <span class="section-kicker">Publications</span>
+            <h2 class="section-title-left">Academic work and research contributions</h2>
+            <p class="section-copy">Journal articles, conference papers, review articles and research projects will be organized here.</p>
+            <a href="#contact" class="btn btn-outline-primary">View Publications</a>
+          </div>
+          <div class="col-lg-8 publication-list">
+            <article class="publication-item"><span>Journal article</span><div><h3>Impact and mechanical behaviour of advanced materials</h3><p>Journal name, year and DOI will be added here.</p></div><a href="#contact">↗</a></article>
+            <article class="publication-item"><span>Research project</span><div><h3>Fatigue resistance of flat steels for automotive applications</h3><p>Project details and collaborators will be added here.</p></div><a href="#contact">↗</a></article>
+            <article class="publication-item"><span>Review article</span><div><h3>Impact resistance of zirconia and alumina-based ceramics</h3><p>Publication status and supporting materials will be added here.</p></div><a href="#contact">↗</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="section section-white" id="resources">
+      <div class="container site-narrow">
+        <div class="section-heading text-center">
+          <span class="section-kicker">Free Learning</span>
+          <h2>Engineering Resources for Students</h2>
+          <p>Downloadable notes, formula sheets and practical tools to support learning and revision.</p>
+        </div>
 
-</section>
+        <div class="resources-grid">
+          <article class="resource-card"><div class="resource-icon">∑</div><h3>Formula Sheets</h3><p>Important equations organized by subject.</p><a href="#contact">Coming soon →</a></article>
+          <article class="resource-card"><div class="resource-icon">✎</div><h3>Lecture Notes</h3><p>Concise explanations and structured summaries.</p><a href="#contact">Coming soon →</a></article>
+          <article class="resource-card"><div class="resource-icon">✓</div><h3>Solved Exercises</h3><p>Fully worked engineering problems with units.</p><a href="#contact">Coming soon →</a></article>
+          <article class="resource-card"><div class="resource-icon">ƒ</div><h3>Engineering Calculators</h3><p>Useful tools for common calculations.</p><a href="#contact">Coming soon →</a></article>
+        </div>
+      </div>
+    </section>
 
-<section class="container py-5">
+    <section class="section section-soft" id="blog">
+      <div class="container site-narrow">
+        <div class="section-heading-row">
+          <div>
+            <span class="section-kicker">Engineering Blog</span>
+            <h2 class="section-title-left">Learn one concept at a time</h2>
+          </div>
+          <a href="#contact" class="text-link">View all articles →</a>
+        </div>
 
-<h2 class="text-center mb-5">
+        <div class="blog-grid">
+          <article class="blog-card"><div class="blog-number">01</div><div class="blog-body"><span>Fluid Mechanics</span><h3>Bernoulli's Equation Explained Clearly</h3><p>Assumptions, physical meaning and practical applications.</p><a href="#contact">Read article →</a></div></article>
+          <article class="blog-card"><div class="blog-number">02</div><div class="blog-body"><span>Mechanics of Materials</span><h3>Stress and Strain: What Is the Difference?</h3><p>A clear introduction to stress, strain and the stress-strain curve.</p><a href="#contact">Read article →</a></div></article>
+          <article class="blog-card"><div class="blog-number">03</div><div class="blog-body"><span>Materials Engineering</span><h3>Understanding Fatigue Failure</h3><p>Why cyclic loading can cause failure below static strength.</p><a href="#contact">Read article →</a></div></article>
+        </div>
+      </div>
+    </section>
 
-Featured Courses
+    <section class="section section-white" id="about">
+      <div class="container site-narrow">
+        <div class="about-panel">
+          <div><img src="images/mohamed-imariouane.png" alt="Professor Mohamed Imariouane"></div>
+          <div>
+            <span class="section-kicker">About the Professor</span>
+            <h2>Professor Mohamed Imariouane</h2>
+            <p class="about-role">Professor of Mechanical Engineering at École Mohammadia d'Ingénieurs, Rabat</p>
+            <p>MechanicsProfessor.com brings university-level teaching, practical engineering examples and research-based knowledge together in one accessible platform.</p>
+            <p>The mission is to help students and professionals build strong mechanical engineering fundamentals through clear online courses, articles and free learning resources.</p>
+            <a href="#contact" class="btn btn-primary">Contact the Professor</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</h2>
+    <section class="contact-section" id="contact">
+      <div class="container site-narrow">
+        <div class="contact-panel">
+          <div>
+            <span>Stay Connected</span>
+            <h2>Follow the development of new courses and resources.</h2>
+            <p>Udemy courses, engineering articles and downloadable materials will be added progressively.</p>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:imariouanemohamed@gmail.com" class="btn btn-light">Contact Me</a>
+            <a href="#courses" class="btn btn-outline-light">Explore Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="row">
+  <footer class="site-footer">
+    <div class="container site-narrow">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="#home"><span>⚙</span> MechanicsProfessor</a>
+          <p>Mechanical engineering courses, research insights and free resources by Professor Mohamed Imariouane.</p>
+        </div>
+        <div><h3>Learn</h3><a href="#courses">Courses</a><a href="#resources">Resources</a><a href="#blog">Blog</a></div>
+        <div><h3>Academic</h3><a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a></div>
+        <div><h3>Connect</h3><a href="#contact">Email</a><a href="#contact">LinkedIn</a><a href="#contact">Udemy</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 MechanicsProfessor.com</span><span>Built for engineering education.</span></div>
+    </div>
+  </footer>
 
-<div class="col-md-4 mb-4">
-
-<div class="card h-100">
-
-<div class="card-body">
-
-<h4>Fluid Mechanics</h4>
-
-<p>
-Understand fluids from fundamentals to engineering applications.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4 mb-4">
-
-<div class="card h-100">
-
-<div class="card-body">
-
-<h4>Thermodynamics</h4>
-
-<p>
-Master energy systems and thermal engineering.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4 mb-4">
-
-<div class="card h-100">
-
-<div class="card-body">
-
-<h4>Mechanical Behavior of Materials</h4>
-
-<p>
-Stress, strain, fatigue and fracture mechanics.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="bg-light py-5">
-
-<div class="container text-center">
-
-<h2>
-
-About Professor Mohamed Imariouane
-
-</h2>
-
-<p class="mt-4">
-
-Professor of Mechanical Engineering dedicated to making engineering education
-accessible through high-quality courses, research, and practical examples.
-
-</p>
-
-</div>
-
-</section>
-
-<footer class="bg-dark text-white text-center p-4">
-
-© 2026 MechanicsProfessor.com
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
