@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MP Labs is the interactive engineering laboratory platform from MechanicsProfessor for fluid mechanics, solid mechanics and thermal sciences.">
+  <meta name="author" content="Professor Mohamed Imariouane">
+  <meta property="og:title" content="MP Labs | Interactive Engineering Laboratories">
+  <meta property="og:description" content="Predict, build, simulate, verify and master engineering equations.">
+  <meta property="og:type" content="website">
+  <title>MP Labs | Interactive Engineering Laboratories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared/lab-design.css">
+</head>
+<body class="labs-home">
+  <header class="labs-header">
+    <div class="labs-container header-inner">
+      <a class="labs-brand" href="../index.html" aria-label="MechanicsProfessor home">
+        <span class="brand-gear" aria-hidden="true">MP</span>
+        <span class="brand-copy"><strong>MechanicsProfessor</strong><small>Interactive engineering</small></span>
+      </a>
+      <nav class="labs-nav" aria-label="Laboratory navigation">
+        <a href="../index.html">Main site</a>
+        <a class="active" href="./" aria-current="page">MP Labs</a>
+        <a href="#method">How it works</a>
+        <a href="#lab-map">Lab map</a>
+      </nav>
+      <a class="header-action" href="#lab-map">Explore labs <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="labs-hero">
+      <div class="labs-container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A new MechanicsProfessor experience</p>
+          <h1>See the equations.<br><em>Test the physics.</em></h1>
+          <p class="hero-lead">MP Labs turns mechanical engineering into an interactive learning journey. Make a prediction, change the model, run the experiment and verify every result against the governing equation.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#lab-map">Explore the lab map</a>
+            <a class="button button-secondary" href="#method">Discover the method</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>03</dt><dd>engineering<br>disciplines</dd></div>
+            <div><dt>12</dt><dd>interactive labs<br>on the roadmap</dd></div>
+            <div><dt>100%</dt><dd>equation-based<br>learning</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-board" aria-label="Preview of the MP Labs learning system">
+          <div class="board-topline"><span>MP LABS / CONCEPT BOARD</span><span class="live-dot">NEW PLATFORM</span></div>
+          <div class="equation-window">
+            <div class="equation-label">Governing equation</div>
+            <div class="equation-main">p/ρg + V²/2g + z = H</div>
+            <div class="equation-note">Every term becomes visible and measurable.</div>
+          </div>
+          <div class="board-diagram" aria-hidden="true">
+            <div class="reservoir reservoir-a"><span>z₁</span><i></i></div>
+            <div class="pipe-line pipe-a"></div>
+            <div class="pump-symbol">P</div>
+            <div class="pipe-line pipe-b"></div>
+            <div class="flow-pulse pulse-one"></div>
+            <div class="flow-pulse pulse-two"></div>
+            <div class="reservoir reservoir-b"><span>z₂</span><i></i></div>
+          </div>
+          <div class="board-metrics">
+            <article><small>INPUT</small><strong>Geometry</strong><span>D, L, z, ε</span></article>
+            <article><small>SOLVE</small><strong>Physics</strong><span>Q, V, Re, Δp</span></article>
+            <article><small>VERIFY</small><strong>Residual</strong><span>Equation balance</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="labs-container">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow"><span></span> The MP learning loop</p>
+          <h2>From intuition to engineering proof</h2>
+          <p>Every new laboratory will use the same five-step method so that students learn the reasoning, not only the final number.</p>
+        </div>
+        <ol class="learning-loop">
+          <li><span class="step-number">01</span><div class="step-icon">?</div><h3>Predict</h3><p>Choose what you think will happen before changing the model.</p></li>
+          <li><span class="step-number">02</span><div class="step-icon">＋</div><h3>Build</h3><p>Configure geometry, material, fluid and boundary conditions.</p></li>
+          <li><span class="step-number">03</span><div class="step-icon">▶</div><h3>Simulate</h3><p>Run the model and watch the physical response evolve.</p></li>
+          <li><span class="step-number">04</span><div class="step-icon">=</div><h3>Verify</h3><p>Compare the simulation with the governing equation.</p></li>
+          <li><span class="step-number">05</span><div class="step-icon">★</div><h3>Challenge</h3><p>Solve a design task under realistic engineering limits.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="lab-map-section" id="lab-map">
+      <div class="labs-container">
+        <div class="section-heading lab-map-heading">
+          <div>
+            <p class="eyebrow"><span></span> Laboratory roadmap</p>
+            <h2>Choose a field to explore</h2>
+          </div>
+          <p>Each laboratory is being designed as a new equation-verification experience with visible assumptions, units and numerical checks.</p>
+        </div>
+
+        <div class="discipline-tabs" role="tablist" aria-label="Engineering disciplines">
+          <button class="discipline-tab is-active" id="tab-fluid" type="button" role="tab" aria-selected="true" aria-controls="panel-fluid" data-discipline="fluid">
+            <span class="tab-mark fluid-mark">≈</span><span><strong>Fluid Mechanics</strong><small>4 laboratories</small></span>
+          </button>
+          <button class="discipline-tab" id="tab-solid" type="button" role="tab" aria-selected="false" aria-controls="panel-solid" data-discipline="solid">
+            <span class="tab-mark solid-mark">◇</span><span><strong>Solid Mechanics</strong><small>4 laboratories</small></span>
+          </button>
+          <button class="discipline-tab" id="tab-thermal" type="button" role="tab" aria-selected="false" aria-controls="panel-thermal" data-discipline="thermal">
+            <span class="tab-mark thermal-mark">△</span><span><strong>Thermal Sciences</strong><small>4 laboratories</small></span>
+          </button>
+        </div>
+
+        <div class="discipline-panel is-active" id="panel-fluid" role="tabpanel" aria-labelledby="tab-fluid" data-panel="fluid">
+          <div class="panel-intro"><span class="panel-code">FM</span><div><h3>Fluid Mechanics</h3><p>Connect conservation laws, flow visualization and engineering design.</p></div><span class="panel-status">FIRST DISCIPLINE</span></div>
+          <div class="lab-grid">
+            <article class="lab-card lab-card-featured">
+              <div class="card-meta"><span class="lab-code">FM—01</span><span class="status status-next">NEXT TO BUILD</span></div>
+              <div class="card-symbol bernoulli-symbol"><span>p</span><i>+</i><span>V²</span><i>+</i><span>z</span></div>
+              <h3>Bernoulli Principle</h3>
+              <p>Build a flow system, track pressure, velocity and elevation, then verify the energy equation term by term.</p>
+              <ul class="concept-tags"><li>Bernoulli</li><li>Head loss</li><li>Pumps</li></ul>
+              <a class="card-link" href="fluid-mechanics/bernoulli/">View the new lab concept <span>→</span></a>
+            </article>
+            <article class="lab-card">
+              <div class="card-meta"><span class="lab-code">FM—02</span><span class="status">PLANNED</span></div>
+              <div class="card-symbol reynolds-symbol"><span>Re</span><i>ρVD/μ</i></div>
+              <h3>Reynolds Flow Regimes</h3>
+              <p>Change viscosity, velocity and diameter to discover when laminar flow becomes turbulent.</p>
+              <ul class="concept-tags"><li>Reynolds</li><li>Viscosity</li><li>Regimes</li></ul>
+              <span class="card-link card-link-muted">Planned for phase 3</span>
+            </article>
+            <article class="lab-card">
+              <div class="card-meta"><span class="lab-code">FM—03</span><span class="status">PLANNED</span></div>
+              <div class="card-symbol boundary-symbol"><i></i><i></i><i></i></div>
+              <h3>Boundary Layer Explorer</h3>
+              <p>Visualize velocity profiles, thickness, separation and the effect of pressure gradients.</p>
+              <ul class="concept-tags"><li>δ(x)</li><li>Profiles</li><li>Separation</li></ul>
+              <span class="card-link card-link-muted">Planned for phase 3</span>
+            </article>
+            <article class="lab-card">
+              <div class="card-meta"><span class="lab-code">FM—04</span><span class="status">PLANNED</span></div>
+              <div class="card-symbol field-symbol"><i></i><i></i><i></i><i></i><span>∇</span></div>
+              <h3>Navier–Stokes Field Lab</h3>
+              <p>Explore how pressure, inertia, viscosity and body forces shape a two-dimensional flow field.</p>
+              <ul class="concept-tags"><li>Momentum</li><li>Vector fields</li><li>Residuals</li></ul>
+              <span class="card-link card-link-muted">Planned for phase 4</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="discipline-panel" id="panel-solid" role="tabpanel" aria-labelledby="tab-solid" data-panel="solid" hidden>
+          <div class="panel-intro"><span class="panel-code solid-code">SM</span><div><h3>Solid Mechanics</h3><p>Link loading, deformation, stress and failure through interactive models.</p></div><span class="panel-status">ROADMAP</span></div>
+          <div class="lab-grid">
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">SM—01</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">σ–ε</div><h3>Stress–Strain Studio</h3><p>Compare elastic, plastic and brittle material behaviour from complete constitutive curves.</p><ul class="concept-tags"><li>Hooke</li><li>Yield</li><li>Ductility</li></ul><span class="card-link card-link-muted">Solid Mechanics roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">SM—02</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">EI·v″</div><h3>Beam Deflection Lab</h3><p>Move loads and supports, then compare the calculated and visualized deflection curve.</p><ul class="concept-tags"><li>Beams</li><li>Supports</li><li>Deflection</li></ul><span class="card-link card-link-muted">Solid Mechanics roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">SM—03</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">Mohr</div><h3>Mohr's Circle Explorer</h3><p>Rotate an element and see the normal and shear stresses move around Mohr's circle.</p><ul class="concept-tags"><li>Stress</li><li>Rotation</li><li>Principal</li></ul><span class="card-link card-link-muted">Solid Mechanics roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">SM—04</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">S–N</div><h3>Fatigue Design Lab</h3><p>Investigate cyclic loading, mean stress and design safety using S–N behaviour.</p><ul class="concept-tags"><li>Fatigue</li><li>Cycles</li><li>Safety</li></ul><span class="card-link card-link-muted">Solid Mechanics roadmap</span></article>
+          </div>
+        </div>
+
+        <div class="discipline-panel" id="panel-thermal" role="tabpanel" aria-labelledby="tab-thermal" data-panel="thermal" hidden>
+          <div class="panel-intro"><span class="panel-code thermal-code">TS</span><div><h3>Thermal Sciences</h3><p>Explore energy conversion, heat transfer and thermodynamic performance.</p></div><span class="panel-status">ROADMAP</span></div>
+          <div class="lab-grid">
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">TS—01</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">P–V</div><h3>Thermodynamic Cycle Builder</h3><p>Assemble ideal processes and visualize work, heat and efficiency on state diagrams.</p><ul class="concept-tags"><li>Cycles</li><li>Work</li><li>Efficiency</li></ul><span class="card-link card-link-muted">Thermal roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">TS—02</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">q = −k∇T</div><h3>Heat Conduction Lab</h3><p>Change geometry and conductivity to discover temperature fields and thermal resistance.</p><ul class="concept-tags"><li>Fourier</li><li>Gradient</li><li>Resistance</li></ul><span class="card-link card-link-muted">Thermal roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">TS—03</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">Nu</div><h3>Convection Explorer</h3><p>Connect flow regime, boundary layers and dimensionless correlations to heat transfer.</p><ul class="concept-tags"><li>Nusselt</li><li>Convection</li><li>Correlations</li></ul><span class="card-link card-link-muted">Thermal roadmap</span></article>
+            <article class="lab-card"><div class="card-meta"><span class="lab-code">TS—04</span><span class="status">PLANNED</span></div><div class="card-symbol text-symbol">εσT⁴</div><h3>Thermal Radiation Lab</h3><p>Test emissivity, view factors and temperature to balance radiative exchange.</p><ul class="concept-tags"><li>Radiation</li><li>Emissivity</li><li>View factor</li></ul><span class="card-link card-link-muted">Thermal roadmap</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality-section">
+      <div class="labs-container quality-grid">
+        <div><p class="eyebrow light-eyebrow"><span></span> Built for understanding</p><h2>Every result must explain itself.</h2></div>
+        <div class="quality-list">
+          <article><span>01</span><div><h3>Equations always visible</h3><p>Symbols, units and assumptions remain connected to the model.</p></div></article>
+          <article><span>02</span><div><h3>Numerical verification</h3><p>Students can compare both sides of an equation and inspect the residual.</p></div></article>
+          <article><span>03</span><div><h3>Engineering limits</h3><p>Warnings show when a model leaves its valid physical assumptions.</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="labs-footer">
+    <div class="labs-container footer-main">
+      <a class="labs-brand footer-brand" href="../index.html"><span class="brand-gear">MP</span><span class="brand-copy"><strong>MechanicsProfessor</strong><small>Learn. Simulate. Verify.</small></span></a>
+      <p>Interactive mechanical engineering laboratories by Professor Mohamed Imariouane.</p>
+      <div class="footer-links"><a href="../index.html">Main site</a><a href="../index.html#courses">Courses</a><a href="../index.html#publications">Publications</a><a href="../index.html#contact">Contact</a></div>
+    </div>
+    <div class="labs-container footer-bottom"><span>© 2026 MechanicsProfessor.com</span><span>MP Labs — Phase 1 foundation</span></div>
+  </footer>
+
+  <script src="shared/lab-engine.js"></script>
+</body>
+</html>

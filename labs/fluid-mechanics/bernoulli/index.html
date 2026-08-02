@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept and development roadmap for the new MechanicsProfessor Bernoulli Principle interactive laboratory.">
+  <title>Bernoulli Principle Lab | MP Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../shared/lab-design.css">
+</head>
+<body>
+  <header class="labs-header">
+    <div class="labs-container header-inner">
+      <a class="labs-brand" href="../../../index.html" aria-label="MechanicsProfessor home">
+        <span class="brand-gear" aria-hidden="true">MP</span>
+        <span class="brand-copy"><strong>MechanicsProfessor</strong><small>Interactive engineering</small></span>
+      </a>
+      <nav class="labs-nav" aria-label="Laboratory navigation">
+        <a href="../../../index.html">Main site</a>
+        <a class="active" href="../../">MP Labs</a>
+        <a href="#new-direction">New direction</a>
+        <a href="#roadmap">Build roadmap</a>
+      </nav>
+      <a class="header-action" href="../../">All labs <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main class="concept-main">
+    <section class="concept-hero">
+      <div class="labs-container">
+        <a class="back-link" href="../../"><span aria-hidden="true">←</span> Back to MP Labs</a>
+        <div class="concept-hero-grid" style="margin-top: 34px;">
+          <div>
+            <p class="eyebrow"><span></span> FM—01 / Next laboratory</p>
+            <h1>Bernoulli Principle.<br><em>Rebuilt from first principles.</em></h1>
+            <p>A completely new educational experience for observing energy conservation, questioning assumptions and verifying the extended Bernoulli equation term by term.</p>
+          </div>
+          <aside class="retired-note">
+            <strong>A new laboratory architecture.</strong>
+            <p>This concept introduces a new visual language, equation engine and teaching method built around scientific verification.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="concept-body" id="new-direction">
+      <div class="labs-container concept-columns">
+        <article class="concept-panel">
+          <p class="eyebrow"><span></span> Physics to verify</p>
+          <h2>The equation is the centre of the game</h2>
+          <p>Instead of only displaying calculated values, the new lab will show where every energy term comes from and whether the selected assumptions remain valid.</p>
+          <div class="equation-card">
+            <strong>Extended Bernoulli equation</strong>
+            <div>p₁/ρg + α₁V₁²/2g + z₁ + Hₚ = p₂/ρg + α₂V₂²/2g + z₂ + h<sub>L</sub></div>
+            <small>Pressure head + kinetic head + elevation head + pump head = downstream energy + linear and singular losses.</small>
+          </div>
+          <ul class="feature-checklist">
+            <li>Expose both sides of the equation and the numerical residual.</li>
+            <li>Separate elevation, pressure, kinetic, pump and loss contributions.</li>
+            <li>Warn when steady, incompressible or one-dimensional assumptions are not appropriate.</li>
+            <li>Switch between ideal Bernoulli and the real extended energy equation.</li>
+          </ul>
+        </article>
+
+        <article class="concept-panel" id="roadmap">
+          <p class="eyebrow"><span></span> Development roadmap</p>
+          <h2>What will be built next</h2>
+          <p>The laboratory will be developed in controlled blocks so every numerical result can be tested before the game layer is added.</p>
+          <div class="build-phases">
+            <div class="build-phase"><span>1</span><div><strong>Equation engine</strong><small>Units, fluid properties and energy balance</small></div><span>NEXT</span></div>
+            <div class="build-phase"><span>2</span><div><strong>Interactive experiment</strong><small>Geometry, sections, pressure taps and pump</small></div><span>PLANNED</span></div>
+            <div class="build-phase"><span>3</span><div><strong>Scientific visualizations</strong><small>HGL, EGL, profiles and equation terms</small></div><span>PLANNED</span></div>
+            <div class="build-phase"><span>4</span><div><strong>Verification challenges</strong><small>Prediction, diagnosis and design missions</small></div><span>PLANNED</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="labs-footer">
+    <div class="labs-container footer-main">
+      <a class="labs-brand footer-brand" href="../../../index.html"><span class="brand-gear">MP</span><span class="brand-copy"><strong>MechanicsProfessor</strong><small>Learn. Simulate. Verify.</small></span></a>
+      <p>New Bernoulli Principle laboratory — concept foundation.</p>
+      <div class="footer-links"><a href="../../">MP Labs</a><a href="../../../index.html#courses">Courses</a><a href="../../../index.html#contact">Contact</a></div>
+    </div>
+    <div class="labs-container footer-bottom"><span>© 2026 MechanicsProfessor.com</span><span>FM—01 / Concept stage</span></div>
+  </footer>
+  <script src="../../shared/lab-engine.js"></script>
+</body>
+</html>
