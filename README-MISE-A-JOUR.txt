@@ -1,8 +1,15 @@
-MECHANICSPROFESSOR.COM — MP LABS / ÉTAPE 2
-==========================================
+MECHANICSPROFESSOR.COM — MP LABS / NEWSLETTER
+=============================================
 
 Cette archive contient la version complète du site prête à remplacer la
 version actuellement publiée.
+
+NOUVEAUTÉ NEWSLETTER
+--------------------
+- nouvelle section newsletter intégrée à la page principale ;
+- formulaire Brevo avec consentement, double opt-in et reCAPTCHA ;
+- affichage responsive pour ordinateur, tablette et téléphone ;
+- lien Newsletter ajouté dans le pied de page.
 
 NOUVEAUTÉS DE L'ÉTAPE 2
 -----------------------
