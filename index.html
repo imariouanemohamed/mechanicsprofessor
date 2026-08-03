@@ -104,34 +104,6 @@
       display: block;
     }
 
-    .resource-card.resource-featured {
-      border-color: rgba(13, 110, 253, 0.38);
-      box-shadow: 0 18px 45px rgba(13, 110, 253, 0.12);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .resource-card.resource-featured::before {
-      content: "INTERACTIVE";
-      position: absolute;
-      top: 0.8rem;
-      right: 0.8rem;
-      padding: 0.25rem 0.55rem;
-      border-radius: 999px;
-      background: #e7f2ff;
-      color: #0d6efd;
-      font-size: 0.66rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-    }
-
-    .resource-card.resource-featured a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-weight: 700;
-    }
-
     @media (max-width: 767px) {
       .contact-intro {
         margin-bottom: 1.5rem;
@@ -159,12 +131,11 @@
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
           <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="labs/">MP Labs</a></li>
           <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="labs/">Explore Labs</a>
+        <a class="btn btn-primary nav-cta" href="#courses">Explore Courses</a>
       </div>
     </div>
   </nav>
@@ -219,8 +190,8 @@
       <div class="container site-narrow">
         <div class="section-heading text-center">
           <span class="section-kicker">Featured Courses</span>
-          <h2>Learn Mechanical Engineering Online</h2>
-          <p>High-quality courses designed to build strong fundamentals and solve real engineering problems.</p>
+          <h2>Learn Mechanical Engineering on Udemy</h2>
+          <p>Focused courses designed to build strong fundamentals, explain the physics behind the equations and solve real engineering problems.</p>
         </div>
 
         <div class="row g-4">
@@ -229,7 +200,7 @@
               <div class="course-icon">🌊</div>
               <h3>Fluid Mechanics</h3>
               <p>Fluid statics, Bernoulli's equation, pipe flow, pumps, turbines and introductory CFD.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
@@ -237,7 +208,7 @@
               <div class="course-icon">🔥</div>
               <h3>Applied Thermodynamics</h3>
               <p>Thermodynamic cycles, energy systems and heat transfer through practical engineering examples.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
@@ -245,7 +216,7 @@
               <div class="course-icon">⚙️</div>
               <h3>Mechanical Behaviour of Materials</h3>
               <p>Stress, strain, fatigue, fracture, ceramics and advanced engineering materials.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
@@ -253,7 +224,7 @@
               <div class="course-icon">📐</div>
               <h3>Continuum Mechanics</h3>
               <p>Tensor notation, deformation, stress analysis and constitutive behaviour.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
@@ -261,7 +232,7 @@
               <div class="course-icon">🧩</div>
               <h3>Finite Element Analysis</h3>
               <p>From governing equations and weak form to practical finite element modelling.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
           <div class="col-md-6 col-xl-4">
@@ -269,7 +240,7 @@
               <div class="course-icon">🧪</div>
               <h3>Materials Science</h3>
               <p>Microstructure, mechanical properties, failure mechanisms and material selection.</p>
-              <a href="#contact" class="btn btn-primary btn-sm">Coming Soon</a>
+              <a href="#newsletter" class="btn btn-primary btn-sm">Coming Soon on Udemy</a>
             </article>
           </div>
         </div>
@@ -369,7 +340,6 @@
           <article class="resource-card"><div class="resource-icon">∑</div><h3>Formula Sheets</h3><p>Important equations organized by subject.</p><a href="#contact">Coming soon →</a></article>
           <article class="resource-card"><div class="resource-icon">✎</div><h3>Lecture Notes</h3><p>Concise explanations and structured summaries.</p><a href="#contact">Coming soon →</a></article>
           <article class="resource-card"><div class="resource-icon">✓</div><h3>Solved Exercises</h3><p>Fully worked engineering problems with units.</p><a href="#contact">Coming soon →</a></article>
-          <article class="resource-card resource-featured"><div class="resource-icon">⚙</div><h3>MP Labs</h3><p>Explore the new interactive laboratory platform for fluid mechanics, solid mechanics and thermal sciences.</p><a href="labs/">Explore the laboratory roadmap →</a></article>
         </div>
       </div>
     </section>
@@ -414,12 +384,12 @@
           <div class="newsletter-copy">
             <span class="newsletter-kicker">Weekly newsletter</span>
             <h2 id="newsletter-heading">One clear engineering idea, every week.</h2>
-            <p>Build stronger mechanical engineering intuition with concise explanations, practical examples, research insights and updates from the interactive labs.</p>
+            <p>Build stronger mechanical engineering intuition with concise explanations, practical examples, research insights and updates about the upcoming Udemy courses.</p>
 
             <ul class="newsletter-benefits" aria-label="Newsletter benefits">
               <li><span aria-hidden="true">01</span> Understand the physics behind the equations</li>
               <li><span aria-hidden="true">02</span> Learn from worked engineering examples</li>
-              <li><span aria-hidden="true">03</span> Discover new lessons, articles and labs</li>
+              <li><span aria-hidden="true">03</span> Discover new lessons, articles and Udemy courses</li>
             </ul>
 
             <p class="newsletter-note">Free to join. No spam. Unsubscribe at any time.</p>
@@ -753,9 +723,9 @@
           <a class="footer-brand" href="#home"><span>⚙</span> MechanicsProfessor</a>
           <p>Mechanical engineering courses, research insights and free resources by Professor Mohamed Imariouane.</p>
         </div>
-        <div><h3>Learn</h3><a href="#courses">Courses</a><a href="#resources">Resources</a><a href="labs/">MP Labs</a><a href="#blog">Blog</a></div>
+        <div><h3>Learn</h3><a href="#courses">Udemy Courses</a><a href="#resources">Resources</a><a href="#blog">Blog</a></div>
         <div><h3>Academic</h3><a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a></div>
-        <div><h3>Connect</h3><a href="#newsletter">Newsletter</a><a href="#contact">Email</a><a href="#contact">LinkedIn</a><a href="#contact">Udemy</a></div>
+        <div><h3>Connect</h3><a href="#newsletter">Newsletter</a><a href="#contact">Email</a><a href="#contact">LinkedIn</a><a href="#courses">Udemy</a></div>
       </div>
       <div class="footer-bottom"><span>© 2026 MechanicsProfessor.com</span><span>Built for engineering education.</span></div>
     </div>

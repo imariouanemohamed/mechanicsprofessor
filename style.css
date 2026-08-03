@@ -129,3 +129,7 @@
   .newsletter-embed{padding:.45rem;border-radius:22px}
   .newsletter-frame{height:900px;min-height:900px;border-radius:17px}
 }
+
+@media(min-width:1200px){
+  .resources-grid{grid-template-columns:repeat(3,1fr)}
+}
