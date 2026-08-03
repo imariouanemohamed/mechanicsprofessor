@@ -190,6 +190,7 @@ button, input, select { font: inherit; }
 .lab-code { color: #6e8498; font-size: 9px; font-weight: 800; letter-spacing: .13em; }
 .status { padding: 5px 7px; border-radius: 999px; background: #eef2f6; color: #7d8c99; font-size: 7px; font-weight: 800; letter-spacing: .1em; }
 .status-next { background: #e6f5ff; color: var(--blue-700); }
+.status-live { background: #e5f8ef; color: #118053; box-shadow: 0 0 0 3px rgba(22,163,103,.08); }
 .card-symbol { height: 82px; display: flex; align-items: center; justify-content: center; gap: 8px; margin: 20px 0 17px; border-radius: 11px; background: #f3f8fc; color: var(--blue-700); }
 .bernoulli-symbol span { padding: 7px 8px; border: 1px solid #b8dbf4; border-radius: 8px; background: #fff; font: 700 13px/1 var(--font-heading); }
 .bernoulli-symbol i { color: #88a5b9; font-style: normal; }
