@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://imariouanemohamed.github.io/mechanicsprofessor/sitemap.xml
+Sitemap: https://mechanicsprofessor.com/sitemap.xml
