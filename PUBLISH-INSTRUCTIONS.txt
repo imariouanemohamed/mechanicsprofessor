@@ -1,0 +1,48 @@
+MECHANICSPROFESSOR.COM — PUBLISHING INSTRUCTIONS
+
+This folder is the complete latest static website package.
+
+IMPORTANT
+Do not upload the ZIP file directly to your website repository.
+Extract it first, then copy all files and folders inside it.
+
+METHOD 1 — VISUAL STUDIO CODE
+
+1. Download and extract MechanicsProfessor-latest-complete.zip.
+2. Open your existing MechanicsProfessor website folder in Visual Studio Code.
+3. Copy every file and the complete images folder from the extracted package
+   into the root of your website project.
+4. When Windows asks, choose Replace the files in the destination.
+5. In Visual Studio Code, open Source Control from the left sidebar.
+6. Click Stage All Changes (+).
+7. Enter this message:
+   Update course learning paths and symbols
+8. Click Commit.
+9. Click Sync Changes or Push.
+10. Wait for Cloudflare Pages to finish the automatic deployment.
+
+METHOD 2 — VISUAL STUDIO CODE TERMINAL
+
+After copying the files, open Terminal > New Terminal and run:
+
+git add .
+git commit -m "Update course learning paths and symbols"
+git push
+
+FILES INCLUDED
+
+- index.html — main MechanicsProfessor homepage
+- style.css — homepage styling
+- fluid-mechanics.html — Fluid Mechanics learning path
+- applied-thermodynamics.html — Applied Thermodynamics learning path
+- learning-paths.css — shared learning-path styling and smaller mobile symbols
+- images/mohamed-imariouane.png — professor photograph
+- images/course-symbols/ — all 10 generated course illustrations
+
+AFTER PUBLISHING, CHECK
+
+https://mechanicsprofessor.com/
+https://mechanicsprofessor.com/fluid-mechanics.html
+https://mechanicsprofessor.com/applied-thermodynamics.html
+
+If a previous image remains visible, refresh the page or clear the browser cache.
