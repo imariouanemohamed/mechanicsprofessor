@@ -37,6 +37,7 @@ body.lp-page {
   backdrop-filter: blur(16px);
 }
 .lp-brand { display: inline-flex; align-items: center; gap: 11px; font: 700 24px/1 "Poppins",sans-serif; letter-spacing: -.04em; }
+.lp-brand img { width: min(410px, 32vw); max-height: 100px; height: auto; object-fit: contain; display: block; }
 .lp-brand-mark { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 13px; color: white; background: linear-gradient(145deg,#1d82ed,#075ac8); box-shadow: 0 8px 18px rgba(18,111,223,.2); font-size: 22px; }
 .lp-nav-links { display: flex; gap: 34px; font-weight: 600; }
 .lp-nav-links a { padding: 10px 0; position: relative; }
@@ -93,6 +94,7 @@ body.lp-page {
   .lp-shell { width:min(100% - 32px,680px); }
   .lp-nav { padding:0 17px; }
   .lp-brand { font-size:20px; }
+  .lp-brand img { max-width: 300px; max-height: 75px; }
   .lp-nav-button { display:none; }
   .lp-grid { grid-template-columns:1fr; }
   .lp-section-head { align-items:flex-start; flex-direction:column; gap:13px; }
@@ -100,6 +102,7 @@ body.lp-page {
   .lp-footer p { text-align:left; }
 }
 @media (max-width:560px) {
+  .lp-brand img { max-width: 220px; max-height: 58px; }
   .lp-hero { padding-top:34px; }
   .lp-hero h1 { font-size:38px; }
   .lp-hero-copy { font-size:16px; }
