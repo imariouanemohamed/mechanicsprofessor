@@ -83,6 +83,8 @@ body.lp-page {
 .lp-footer { padding:28px 0; color:#dbeaff; background:var(--lp-navy-deep); }
 .lp-footer .lp-shell { display:flex; align-items:center; justify-content:space-between; gap:30px; }
 .lp-footer .lp-brand { color:white; font-size:20px; }
+.lp-footer .footer-logo-wrap { display:inline-flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:8px 12px; margin-bottom:20px; }
+.lp-footer .footer-full-logo { display:block; width:min(380px,100%); height:auto; object-fit:contain; }
 .lp-footer p { max-width:650px; margin:0; color:#abc4df; text-align:right; line-height:1.55; }
 
 @media (max-width:1000px) {
@@ -94,6 +96,7 @@ body.lp-page {
   .lp-shell { width:min(100% - 32px,680px); }
   .lp-nav { padding:0 17px; }
   .lp-brand { font-size:20px; }
+  .lp-footer .footer-full-logo { max-width:300px; }
   .lp-brand img { max-width: 300px; max-height: 75px; }
   .lp-nav-button { display:none; }
   .lp-grid { grid-template-columns:1fr; }
@@ -103,6 +106,7 @@ body.lp-page {
 }
 @media (max-width:560px) {
   .lp-brand img { max-width: 220px; max-height: 58px; }
+  .lp-footer .footer-full-logo { max-width:230px; }
   .lp-hero { padding-top:34px; }
   .lp-hero h1 { font-size:38px; }
   .lp-hero-copy { font-size:16px; }
